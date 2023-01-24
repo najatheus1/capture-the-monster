@@ -1,6 +1,6 @@
 #include "game.h"
 
-void Game::start(Player player) {
+void Game::start(Player * player) {
 	map.load();
 	while (true) {
 		if (key->getKeyState() >= 1) {

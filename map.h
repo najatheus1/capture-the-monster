@@ -14,8 +14,8 @@ public:
 	Map();
 	~Map();
 	void load();
-	void move(Player player);
-	void show(Player player);
+	void move(Player * player);
+	void show(Player * player);
 	void clear();
 	void placeMonster();
 	void walkRandomMonster();

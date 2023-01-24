@@ -15,5 +15,5 @@ public:
 
 	}
 
-	void start(Player player);
+	void start(Player * player);
 };

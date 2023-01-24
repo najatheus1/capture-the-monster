@@ -10,6 +10,7 @@ KeyBoard::~KeyBoard() {
 }
 
 int8_t KeyBoard::getKeyState() {	
+	// bit & bit
 	if (GetAsyncKeyState((int)'W')) {
 		return this->state = 0x1;
 	}
@@ -21,6 +22,12 @@ int8_t KeyBoard::getKeyState() {
 	}
 	if (GetAsyncKeyState((int)'A')) {
 		return this->state = 0x8;
+	}
+	if (GetAsyncKeyState((int)'Q')) {
+		return this->state = 0x10;
+	}	
+	if (GetAsyncKeyState((int)'E')) {
+		return this->state = 0x13;
 	}
 
 	this->setKeyState(0x0);
